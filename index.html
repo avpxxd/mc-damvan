@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -110,7 +109,8 @@
                 A premier <strong>Java and Bedrock crossplay Survival World</strong> welcoming <strong>E-Sports communities, dedicated builders, and casual gamers</strong>.
             </p>
 
-            <!-- Server IP Display and Copy/Discord Buttons --><div class="inline-flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+            <!-- === CHANGED: Changed 'inline-flex' to 'flex' for proper mobile centering === -->
+            <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                 <!-- IP Display --><div id="ip-display" class="bg-glass-dark-60 text-lg font-mono px-6 py-3 rounded-lg border-2 border-accent/70 color-accent shadow-xl card-shadow">
                     playmc.damvan.ca
                 </div>
@@ -165,20 +165,29 @@
         </div>
     </section>
 
-    <!-- Contact & Join Us CTA Section (Glass effect) --><section class="py-16 bg-glass-dark-30 glass-effect relative z-10">
+    <!-- Contact & Join Us CTA Section (Glass effect) -->
+    <section class="py-16 bg-glass-dark-30 glass-effect relative z-10">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl md:text-4xl font-bold mb-4 text-white">Join the <span class="color-accent">DamMinecraft</span> Community</h2>
             <p class="text-lg text-gray-400 mb-8">
                 Connect with our established community and start your journey today. We support all versions from 1.18+.
             </p>
-            <!-- Call to Action Button with New Accent Color --><a href="#features" class="bg-accent hover:bg-cyan-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg active:scale-95 inline-flex items-center space-x-2">
-                <i data-lucide="play" class="w-5 h-5"></i>
-                <span>Get Started Now</span>
-            </a>
-            <!-- New: Join Discord Button --><a href="https://discord.gg/psrNq7w69q" target="_blank" class="flex items-center space-x-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-[1.03] shadow-lg active:scale-[0.98]">
-                <i data-lucide="message-square" class="w-5 h-5"></i>
-                <span>Join The DamVan Discord</span>
-            </a>
+            
+            <!-- === CHANGED: Added a flex container === -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <!-- Call to Action Button with New Accent Color -->
+                <a href="#features" class="bg-accent hover:bg-cyan-500 text-gray-900 font-bold py-3 px-8 rounded-lg transition-all duration-200 transform hover:scale-105 shadow-lg active:scale-95 inline-flex items-center space-x-2">
+                    <i data-lucide="play" class="w-5 h-5"></i>
+                    <span>Get Started Now</span>
+                </a>
+                <!-- New: Join Discord Button (Changed to inline-flex for consistency) -->
+                <a href="https://discord.gg/psrNq7w69q" target="_blank" class="inline-flex items-center space-x-2 bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 transform hover:scale-[1.03] shadow-lg active:scale-[0.98]">
+                    <i data-lucide="message-square" class="w-5 h-5"></i>
+                    <span>Join The DamVan Discord</span>
+                </a>
+            </div>
+            <!-- === END OF CHANGE === -->
+
         </div>
     </section>
 
